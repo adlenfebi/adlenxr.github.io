@@ -1,148 +1,482 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Adlen XR | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adlen XR | Technical Analyst & Automation Engineer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
 </head>
-
 <body>
 
-<!-- HERO SECTION -->
-<div class="hero">
-
-    <div class="profile-image">
-        <img src="profile.jpg" alt="Adlen XR">
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-logo">Adlen <span class="accent">XR</span></span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="Adlen-XR-TECH ANALYST.pdf" download class="nav-cta">Download CV</a>
     </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#experience" onclick="toggleMenu()">Experience</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a href="Adlen-XR-TECH ANALYST.pdf" download>Download CV</a>
+  </div>
+</nav>
 
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+  <div class="hero-content">
     <div class="hero-text">
-        <h1>Hi, I'm Adlen XR 👋</h1>
-
-        <p>
-            Tech Professional with experience at Amazon in Data Validation,
-            Automation, Quality Assurance, Business Analysis, and Process
-            Optimization. Passionate about building efficient solutions,
-            leveraging technology, and continuously learning new skills to
-            solve real-world business challenges.
-        </p>
-
-        <a href="Adlen-XR-TECH ANALYST.pdf" download class="btn">
-            Download Resume
-        </a>
-
-        <a href="#contact" class="btn secondary-btn">
-            Contact Me
-        </a>
-
+      <div class="hero-tag">
+        <span class="dot"></span> Available for opportunities
+      </div>
+      <h1>Hi, I'm <span class="gradient-text">Adlen XR</span></h1>
+      <div class="typewriter-wrapper">
+        <span class="typewriter-static">I build </span>
+        <span class="typewriter" id="typewriter"></span>
+      </div>
+      <p class="hero-desc">
+        Technical Analyst & Automation Engineer at Amazon — turning complex workflows into elegant, data-driven solutions. Passionate about automation, business intelligence, and building systems that actually work.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">2+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">$1K+</span>
+          <span class="stat-label">Effort Saved</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+      </div>
     </div>
-
-</div>
+    <div class="hero-image-wrap">
+      <div class="hero-image-ring"></div>
+      <div class="hero-image-container">
+        <img src="profile.jpg" alt="Adlen XR" class="hero-img" />
+        <div class="hero-badge">
+          <span>&#128640;</span> Amazon
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-down" aria-label="Scroll down">
+    <div class="scroll-arrow"></div>
+  </a>
+</section>
 
 <!-- ABOUT -->
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a technology enthusiast with hands-on experience in Automation Engineering,
-        Data Analysis, and Process Optimization. I work on validating data accuracy,
-        improving operational efficiency, and building automation solutions using
-        Selenium, Playwright, Java, and Python.
-    </p>
+<section class="section about-section" id="about">
+  <div class="container">
+    <div class="section-tag">Who I Am</div>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a <strong>Technical Business Analyst</strong> with hands-on experience at <strong>Amazon</strong> in data validation, process automation, and quality assurance. I thrive at the intersection of technology and operations — taking messy, manual workflows and turning them into clean, automated systems.</p>
+        <p>With a BTech background in Bio Medical Engineering and a relentless drive to learn, I've expanded into Python, Selenium, Playwright, Power BI, and SQL — building tools that directly impact business efficiency.</p>
+        <p>When I'm not optimizing workflows, I'm reading, doing creative crafts, or exploring new technologies. I strongly believe in staying productive and continuously learning.</p>
+        <div class="about-chips">
+          <span>🎓 BTech — CGPA 8.87</span>
+          <span>📍 Chennai, India</span>
+          <span>💼 Open to Opportunities</span>
+          <span>🌐 English & Tamil</span>
+        </div>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-card-icon">&#9881;</div>
+          <h4>Automation</h4>
+          <p>Building end-to-end automation solutions using Selenium, Playwright & Python</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">&#128200;</div>
+          <h4>Data Analytics</h4>
+          <p>Transforming raw data into actionable insights with SQL, Excel & Power BI</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">&#128203;</div>
+          <h4>Business Analysis</h4>
+          <p>Bridging business needs and tech solutions through requirements & process design</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">&#128736;</div>
+          <h4>Process Optimization</h4>
+          <p>Identifying bottlenecks and implementing measurable workflow improvements</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- SKILLS -->
-<section>
-    <h2>Technical Skills</h2>
-    <div class="grid">
-    <span>Java</span>
-    <span>Python</span>
-    <span>Selenium WebDriver</span>
-    <span>Playwright</span>
-    <span>SQL</span>
-    <span>Excel & Data Analysis</span>
-    <span>Power BI</span>
-    <span>Business Intelligence</span>
-    <span>Data Analytics</span>
-    <span>Data Validation</span>
-    <span>Business Analysis</span>
-    <span>Requirement Gathering</span>
-    <span>Process Improvement</span>
-    <span>Pre-Sales Engineering</span>
-    <span>Manual Testing</span>
-    <span>API Testing</span>
-    <span>Git & GitHub</span>
-    <span>Documentation</span>
-    <span>Research & Problem Solving</span>
-    <span>Agile & Sprint Planning</span>
-    <span>Cross-Functional Collaboration</span>
-    <span>Automation Framework Development</span>
-</div>
+<section class="section skills-section" id="skills">
+  <div class="container">
+    <div class="section-tag">What I Know</div>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">&#128187;</span>
+          <h3>Languages & Automation</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="pill pill-blue">Python</span>
+          <span class="pill pill-blue">Java</span>
+          <span class="pill pill-blue">Selenium WebDriver</span>
+          <span class="pill pill-blue">Playwright</span>
+          <span class="pill pill-blue">VBA Macros</span>
+          <span class="pill pill-blue">Py-Tkinter</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">&#128202;</span>
+          <h3>Data & Analytics</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="pill pill-purple">SQL</span>
+          <span class="pill pill-purple">Excel (Advanced)</span>
+          <span class="pill pill-purple">Power BI</span>
+          <span class="pill pill-purple">Tableau</span>
+          <span class="pill pill-purple">Data Validation</span>
+          <span class="pill pill-purple">Data Analysis</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">&#128101;</span>
+          <h3>Business & Process</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="pill pill-green">Business Analysis</span>
+          <span class="pill pill-green">Agile / Scrum</span>
+          <span class="pill pill-green">Requirement Gathering</span>
+          <span class="pill pill-green">Process Improvement</span>
+          <span class="pill pill-green">User Stories</span>
+          <span class="pill pill-green">Jira</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">&#128295;</span>
+          <h3>Tools & Testing</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="pill pill-orange">Git & GitHub</span>
+          <span class="pill pill-orange">Manual Testing</span>
+          <span class="pill pill-orange">API Testing</span>
+          <span class="pill pill-orange">Documentation</span>
+          <span class="pill pill-orange">QA & QC</span>
+          <span class="pill pill-orange">MS Office Suite</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section>
-    <h2>Experience</h2>
+<section class="section experience-section" id="experience">
+  <div class="container">
+    <div class="section-tag">Where I've Worked</div>
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
 
-    <div class="card">
-        <h3>Amazon | Content / Tech Analyst</h3>
-        <ul>
-            <li>Performed large-scale data validation and quality checks.</li>
-            <li>Identified and resolved process failures through research and analysis.</li>
-            <li>Built automation utilities using Selenium, Playwright, Python & Java.</li>
-            <li>Collaborated in sprint planning and cross-functional projects.</li>
-            <li>Created documentation and requirement analysis reports.</li>
-        </ul>
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-card active-card">
+          <div class="tl-header">
+            <div>
+              <h3>Digital Content Associate</h3>
+              <div class="tl-company">
+                <span class="company-badge">Amazon</span>
+                <span class="tl-location">Chennai, India</span>
+              </div>
+            </div>
+            <span class="tl-date">Jul 2024 – Present</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Designed and built an end-to-end <strong>Productivity Entry Tool</strong> using Python (Tkinter) with Employee & Super Admin screens for real-time work metric tracking</li>
+            <li>Automated content validation and reporting tasks using <strong>VBA Macros, Selenium & Playwright</strong> — saving $1,000+ in manual effort</li>
+            <li>Conducted large-scale <strong>data validation and quality analysis</strong> to ensure accuracy across datasets and support key business decisions</li>
+            <li>Identified workflow bottlenecks and implemented process improvements to optimize turnaround time</li>
+            <li>Collaborated with cross-functional stakeholders to align operational efficiency with product goals</li>
+          </ul>
+          <div class="tl-tags">
+            <span>Python</span><span>Selenium</span><span>Playwright</span><span>VBA</span><span>Data Validation</span><span>Process Automation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-card">
+          <div class="tl-header">
+            <div>
+              <h3>Technical Trainee</h3>
+              <div class="tl-company">
+                <span class="company-badge secondary-badge">Paladin</span>
+                <span class="tl-location">Chennai, India</span>
+              </div>
+            </div>
+            <span class="tl-date">Jan 2024 – Jun 2024</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Drove <strong>Agile sprint activities</strong> — backlog grooming, sprint planning, and task prioritization</li>
+            <li>Collected, analyzed, and documented <strong>business requirements and user stories</strong> from stakeholders for backend projects</li>
+            <li>Evaluated system processes, identified gaps, and recommended improvements to enhance outcomes</li>
+            <li>Prepared structured reports and documentation for project tracking and data-driven decision-making</li>
+          </ul>
+          <div class="tl-tags">
+            <span>Agile</span><span>Requirements</span><span>Documentation</span><span>Jira</span>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
-<section>
-    <h2>Projects</h2>
+<section class="section projects-section" id="projects">
+  <div class="container">
+    <div class="section-tag">What I've Built</div>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
 
-    <div class="card">
+      <div class="project-card featured">
+        <div class="project-top">
+          <div class="project-icon">&#9889;</div>
+          <span class="project-label">Featured</span>
+        </div>
+        <h3>Productivity Entry Tool</h3>
+        <p>End-to-end desktop application built with Python Tkinter featuring dual-mode access — Employee screen for daily metric entry and Super Admin screen for real-time performance monitoring and reporting.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Tkinter</span><span>Data Tracking</span><span>GUI Development</span>
+        </div>
+        <div class="project-impact">
+          <span class="impact-label">Impact:</span> Real-time transparency across team operations
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">&#129302;</div>
+        </div>
         <h3>Automation Frameworks</h3>
-        <p>Built reusable automation frameworks to reduce manual testing effort and improve efficiency.</p>
-    </div>
+        <p>Built reusable test automation frameworks using Selenium WebDriver and Playwright with Python and Java — reducing manual testing effort significantly and improving validation accuracy.</p>
+        <div class="project-stack">
+          <span>Selenium</span><span>Playwright</span><span>Python</span><span>Java</span>
+        </div>
+        <div class="project-impact">
+          <span class="impact-label">Impact:</span> $1,000+ saved in manual effort hours
+        </div>
+      </div>
 
-    <div class="card">
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">&#128202;</div>
+        </div>
         <h3>Data Validation Tools</h3>
-        <p>Developed tools for reporting, validation, and operational productivity tracking.</p>
+        <p>Developed Python-based tools for large-scale content data validation, automated reporting, and operational productivity tracking — integrated with Excel dashboards for stakeholder visibility.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Excel</span><span>VBA</span><span>Reporting</span>
+        </div>
+        <div class="project-impact">
+          <span class="impact-label">Impact:</span> Reduced manual reporting time by 60%+
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">&#127916;</div>
+        </div>
+        <h3>Movie Production Expense Tracker</h3>
+        <p>Collected department-wise production data, analyzed total costs, and prepared structured dashboards to assist decision-making and expense monitoring across all movie departments.</p>
+        <div class="project-stack">
+          <span>Excel</span><span>Data Analysis</span><span>Dashboard</span><span>Reporting</span>
+        </div>
+        <div class="project-impact">
+          <span class="impact-label">Impact:</span> Unified expense visibility across departments
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">&#9749;</div>
+        </div>
+        <h3>Cafe Employee Management System</h3>
+        <p>Documented requirements for employee login/logout, work hours, and daily wage calculation. Created process flows and backend documentation for payroll management for small businesses.</p>
+        <div class="project-stack">
+          <span>Requirements</span><span>Process Design</span><span>Documentation</span><span>BA</span>
+        </div>
+        <div class="project-impact">
+          <span class="impact-label">Impact:</span> Streamlined payroll for small business operations
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">&#127760;</div>
+        </div>
+        <h3>Responsive Web Application</h3>
+        <p>Designed and developed responsive web apps using HTML, CSS, JavaScript. Handled API integration, database validation, Git version control, and translated client needs into technical specs.</p>
+        <div class="project-stack">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span><span>Git</span>
+        </div>
+        <div class="project-impact">
+          <span class="impact-label">Impact:</span> Delivered client-ready responsive UI
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<!-- HOBBIES -->
-<section>
-    <h2>Hobbies & Interests</h2>
-    <p>
-        I love reading books, doing creative crafts, and constantly learning something new.
-        I strongly prefer staying productive and learning rather than sitting idle.
-    </p>
-</section>
-
-<!-- CAREER INTERESTS -->
-<section>
-    <h2>Career Interests</h2>
-    <p>
-        Automation Engineering, Data Analytics, Business Analysis, BI, Consulting,
-        Pre-sales Engineering, and Tech-driven roles.
-    </p>
-</section>
-
-<!-- RESUME -->
-<section>
-    <h2>Resume</h2>
-    <a href="Adlen-XR-TECH ANALYST.pdf" download class="btn">
-        Download Resume
-    </a>
+<!-- CERTIFICATIONS -->
+<section class="section certs-section">
+  <div class="container">
+    <div class="section-tag">Credentials</div>
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-icon">&#127891;</div>
+        <div>
+          <h4>Diploma in Computer Application</h4>
+          <span>Foundational IT & Software Skills</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">&#128200;</div>
+        <div>
+          <h4>SQL Certification</h4>
+          <span>Database Query & Management</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">&#128013;</div>
+        <div>
+          <h4>Python Certification</h4>
+          <span>Programming & Automation</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">&#9000;</div>
+        <div>
+          <h4>English Junior — Typewriting</h4>
+          <span>Professional Communication</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section>
-    <h2>Contact</h2>
-    <p>📧 adlenfebi@gmail.com</p>
-    <p>🔗 LinkedIn: linkedin.com/in/adlen-xr-057b7a204</p>
-    <p>💻 GitHub: github.com/adlenfebi</p>
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-tag">Say Hello</div>
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-subtitle">I'm open to full-time roles, freelance work, and exciting collaborations. Feel free to reach out!</p>
+    <div class="contact-grid">
+      <a href="mailto:adlenfebi@gmail.com" class="contact-card">
+        <div class="contact-icon">&#128140;</div>
+        <h4>Email</h4>
+        <span>adlenfebi@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/adlen-xr057b7a204/" target="_blank" class="contact-card">
+        <div class="contact-icon">&#128279;</div>
+        <h4>LinkedIn</h4>
+        <span>adlen-xr057b7a204</span>
+      </a>
+      <a href="https://github.com/adlenfebi" target="_blank" class="contact-card">
+        <div class="contact-icon">&#128187;</div>
+        <h4>GitHub</h4>
+        <span>github.com/adlenfebi</span>
+      </a>
+      <a href="tel:+917358121164" class="contact-card">
+        <div class="contact-icon">&#128222;</div>
+        <h4>Phone</h4>
+        <span>+91 73581 21164</span>
+      </a>
+    </div>
+    <div class="resume-cta">
+      <a href="Adlen-XR-TECH ANALYST.pdf" download class="btn-primary large-btn">
+        &#8659; Download My Resume
+      </a>
+    </div>
+  </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Designed & Built by <strong>Adlen XR</strong> &nbsp;|&nbsp; Chennai, India &nbsp;|&nbsp; 2025</p>
+</footer>
+
+<script>
+  const words = ['automation tools.', 'data pipelines.', 'smart workflows.', 'BI dashboards.', 'efficient solutions.'];
+  let wordIndex = 0, charIndex = 0, deleting = false;
+  const el = document.getElementById('typewriter');
+  function type() {
+    const word = words[wordIndex];
+    if (!deleting) {
+      el.textContent = word.substring(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === word.length) { deleting = true; setTimeout(type, 1600); return; }
+    } else {
+      el.textContent = word.substring(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) { deleting = false; wordIndex = (wordIndex + 1) % words.length; }
+    }
+    setTimeout(type, deleting ? 60 : 90);
+  }
+  type();
+
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.about-card, .skill-category, .timeline-card, .project-card, .cert-card, .contact-card').forEach(el => {
+    el.classList.add('fade-in');
+    observer.observe(el);
+  });
+</script>
 
 </body>
 </html>
