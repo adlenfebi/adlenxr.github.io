@@ -30,15 +30,16 @@ h2 {
 
 .profile-images {
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .profile-images img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
+    width: 180px;
+    height: auto;
+    max-height: 250px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .hero-text {
