@@ -36,9 +36,9 @@ h2 {
 
 .profile-image img {
     width: 280px;
-    height: auto;
-    max-height: 350px;
+    height: 350px;
     object-fit: contain;
+    background: #f6f8fc;
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
