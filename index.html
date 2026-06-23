@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -33,6 +33,7 @@
     <a href="Adlen-XR-TECH ANALYST.pdf" download>Download CV</a>
   </div>
 </nav>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
 
 <!-- HERO -->
 <section class="hero" id="home">
@@ -447,6 +448,20 @@
 </footer>
 
 <script>
+  // DARK MODE
+  const html = document.documentElement;
+  const btn  = document.getElementById('themeToggle');
+  const saved = localStorage.getItem('theme');
+  const sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initTheme = saved || (sysDark ? 'dark' : 'light');
+  html.setAttribute('data-theme', initTheme);
+  btn.textContent = initTheme === 'dark' ? '☀️' : '🌙';
+  btn.addEventListener('click', () => {
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    btn.textContent = next === 'dark' ? '☀️' : '🌙';
+    localStorage.setItem('theme', next);
+  });
   const words = ['automation tools.', 'data pipelines.', 'smart workflows.', 'BI dashboards.', 'efficient solutions.'];
   let wordIndex = 0, charIndex = 0, deleting = false;
   const el = document.getElementById('typewriter');
