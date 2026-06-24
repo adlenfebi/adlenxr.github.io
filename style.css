@@ -438,7 +438,7 @@ body {
 .pill-blue { background: var(--pill-blue-bg); color: var(--pill-blue-txt); }
 .pill-purple { background: var(--pill-purple-bg); color: var(--pill-purple-txt); }
 .pill-green { background: var(--pill-green-bg); color: var(--pill-green-txt); }
-.pill-orange { background: var(--pill-orange-bg); color: var(--pill-orange-txt); 
+.pill-orange { background: var(--pill-orange-bg); color: var(--pill-orange-txt); } 
 
 /* EXPERIENCE */
 .experience-section { background: var(--bg-alt); }
@@ -465,7 +465,6 @@ body {
   transition: box-shadow 0.2s;
 }
 .timeline-card:hover { box-shadow: var(--shadow-md); }
-background: var(--bg-card); border-color: var(--blue-muted);
 .tl-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; flex-wrap: wrap; gap: 12px; }
 .tl-header h3 { font-size: 18px; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
 .tl-company { display: flex; align-items: center; gap: 10px; }
@@ -637,6 +636,10 @@ background: var(--bg-card); border-color: var(--blue-muted);
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
   .section-title { font-size: 30px; }
   .section { padding: 60px 20px; }
+  .about-cards { grid-template-columns: 1fr 1fr; width: 100%; }
+  .hero-image-wrap { width: 200px; height: 240px; margin: 0 auto; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .about-card { min-width: 0; word-wrap: break-word; }
 }
 
 @media (max-width: 600px) {
@@ -644,4 +647,5 @@ background: var(--bg-card); border-color: var(--blue-muted);
   .typewriter-wrapper { font-size: 18px; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
   .about-cards { grid-template-columns: 1fr; }
+  .hero-image-wrap { width: 160px; height: 190px; }
 }
