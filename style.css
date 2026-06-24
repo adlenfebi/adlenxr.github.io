@@ -582,7 +582,7 @@ body {
 .cert-card span { font-size: 13px; color: var(--gray); }
 
 /* CONTACT - fix dark background */
-.contact-section { background: #0f172a; }
+.contact-section { background: #0f172a !important; }
 .contact-section .section-tag { background: rgba(255,255,255,0.1); color: #93c5fd; }
 .contact-section .section-title { color: white; }
 .contact-subtitle { font-size: 17px; color: #94a3b8; margin-top: -32px; margin-bottom: 48px; }
