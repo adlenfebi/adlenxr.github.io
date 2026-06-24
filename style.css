@@ -409,11 +409,6 @@ body {
 .about-card h4 { font-size: 15px; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
 .about-card p { font-size: 13px; color: var(--gray); line-height: 1.6; }
 
-/* CONTACT - fix dark background */
-.contact-section { background: #0f172a; }
-.contact-section .section-tag { background: rgba(255,255,255,0.1); color: #93c5fd; }
-.contact-section .section-title { color: white; }
-
 /* SKILLS */
 .skills-section { background: var(--bg); }
 .skills-grid {
@@ -586,8 +581,8 @@ body {
 .cert-card h4 { font-size: 15px; font-weight: 700; color: var(--dark); margin-bottom: 3px; }
 .cert-card span { font-size: 13px; color: var(--gray); }
 
-/* CONTACT */
-.contact-section { background: var(--dark); }
+/* CONTACT - fix dark background */
+.contact-section { background: #0f172a; }
 .contact-section .section-tag { background: rgba(255,255,255,0.1); color: #93c5fd; }
 .contact-section .section-title { color: white; }
 .contact-subtitle { font-size: 17px; color: #94a3b8; margin-top: -32px; margin-bottom: 48px; }
